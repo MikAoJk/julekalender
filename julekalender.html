@@ -14,9 +14,38 @@
         cursor: pointer;
         border-radius: 50%;
     }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
 </style>
 
 <body>
+<table>
+    <tr>
+        <th>Vinner</th>
+        <th>Dag</th>
+        <th>Premie</th>
+    </tr>
+    <tr>
+        <td>Joakim</td>
+        <td>1</td>
+        <td>Lakris kuler</td>
+    </tr>
+</table>
+</br>
 
 <button id="spin" class="button">Spin</button>
 <div>
@@ -28,7 +57,7 @@
         "#eaeaea", "#cccccc", "#eaeaea", "#cccccc", "#eaeaea", "#cccccc", "#eaeaea", "#cccccc", "#eaeaea", "#cccccc", "#eaeaea", "#cccccc", "#eaeaea", "#cccccc", "#eaeaea", "#cccccc", "#eaeaea", "#cccccc", "#eaeaea"];
     // NEED to pre load this data prior
     var participants = durstenfeldShuffle(["Joakim", "Torbjørn", "Kjetil", "Tomas",
-        "Einar", "Marianne", "Lina", "Tommy", "Jan Egil", "Nicolai", "Iselin", "Tim", "Morten", "Inese", "Pavels", "Paul", "Julebrus til alle", "Mandarin til alle", "Tvist til alle"]);
+        "Einar", "Marianne", "Lina", "Tommy", "Jan Egil", "Nicolai", "Iselin", "Tim", "Morten", "Inese", "Pavels", "Paul", "Julebrus til alle", "Sjokolade til alle", "Twist til alle"]);
 
 
     var startAngle = 0;
