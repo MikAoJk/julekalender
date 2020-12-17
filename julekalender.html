@@ -94,6 +94,11 @@
         <td>15</td>
         <td>Øl og chips</td>
     </tr>
+    <tr>
+        <td>Morten</td>
+        <td>16</td>
+        <td>Twist</td>
+    </tr>
 </table>
 
 <button id="spin" class="button">Spin</button>
@@ -102,10 +107,12 @@
 </div>
 
 <script type="text/javascript">
-    const colors = ["#cccccc", "#eaeaea", "#cccccc", "#eaeaea", "#cccccc", "#eaeaea", "#cccccc", "#eaeaea"];
+    // Should match the number of participants
+    const colors = ["#cccccc", "#eaeaea", "#cccccc"];
 
     // NEED to pre load this data prior
-    const participants = durstenfeldShuffle(["Einar", "Tommy", "Nicolai", "Morten"]);
+    // Should match the numper of colors
+    const participants = durstenfeldShuffle(["Einar", "Tommy", "Nicolai"]);
 
 
     let startAngle = 0;
