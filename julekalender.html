@@ -102,7 +102,7 @@
     <tr>
         <td>Einar</td>
         <td>17</td>
-        <td></td>
+        <td>Salt</td>
     </tr>
 </table>
 
@@ -113,12 +113,11 @@
 
 <script type="text/javascript">
     // Should match the number of participants
-    const colors = ["#cccccc", "#eaeaea", "#cccccc"];
+    const colors = ["#cccccc", "#eaeaea"];
 
     // NEED to pre load this data prior
     // Should match the numper of colors
-    //const participants = durstenfeldShuffle(["Tommy", "Nicolai"]);
-    const participants = durstenfeldShuffle(["Einar", "Einar", "Einar"]);
+    const participants = durstenfeldShuffle(["Tommy", "Nicolai"]);
 
     let startAngle = 0;
     const arc = Math.PI / (participants.length / 2);
