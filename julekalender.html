@@ -99,6 +99,11 @@
         <td>16</td>
         <td>Twist</td>
     </tr>
+    <tr>
+        <td>Einar</td>
+        <td>17</td>
+        <td></td>
+    </tr>
 </table>
 
 <button id="spin" class="button">Spin</button>
@@ -112,8 +117,8 @@
 
     // NEED to pre load this data prior
     // Should match the numper of colors
-    const participants = durstenfeldShuffle(["Einar", "Tommy", "Nicolai"]);
-
+    //const participants = durstenfeldShuffle(["Tommy", "Nicolai"]);
+    const participants = durstenfeldShuffle(["Einar", "Einar", "Einar"]);
 
     let startAngle = 0;
     const arc = Math.PI / (participants.length / 2);
