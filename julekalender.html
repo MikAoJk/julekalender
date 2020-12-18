@@ -1,5 +1,5 @@
 <html>
-<title>Julekalender</title>
+<title>Julekalender 2020</title>
 <style>
     .button {
         background-color: #000000;
@@ -104,6 +104,16 @@
         <td>17</td>
         <td>Salt</td>
     </tr>
+    <tr>
+        <td>Nicolai</td>
+        <td>18</td>
+        <td>Sjokolade</td>
+    </tr>
+    <tr>
+        <td>Tommy</td>
+        <td>18</td>
+        <td>Sjokolade</td>
+    </tr>
 </table>
 
 <button id="spin" class="button">Spin</button>
@@ -117,7 +127,7 @@
 
     // NEED to pre load this data prior
     // Should match the numper of colors
-    const participants = durstenfeldShuffle(["Tommy", "Nicolai"]);
+    const participants = durstenfeldShuffle(["God jul", "Godt nyttår"]);
 
     let startAngle = 0;
     const arc = Math.PI / (participants.length / 2);
