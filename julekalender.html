@@ -1,5 +1,5 @@
 <html>
-<title>Julekalender 2020</title>
+<title>Julekalender 2021</title>
 <style>
     .button {
         background-color: #000000;
@@ -35,85 +35,17 @@
 <body>
 <table>
     <tr>
-        <th>Vinner</th>
-        <th>Dag</th>
-        <th>Premie</th>
+        <th>Winner</th>
+        <th>Day</th>
+        <th>Price</th>
     </tr>
+    <!-- comment in when winners are declared
     <tr>
-        <td>Joakim</td>
+        <td>Unknown</td>
         <td>1</td>
-        <td>Lakris kuler</td>
+        <td>User1</td>
     </tr>
-    <tr>
-        <td>Inese</td>
-        <td>2</td>
-        <td>Twist, Voksen ringebjelle</td>
-    </tr>
-    <tr>
-        <td>Tomas</td>
-        <td>3</td>
-        <td>Beer pong</td>
-    </tr>
-    <tr>
-        <td>Marianne</td>
-        <td>4</td>
-        <td>Godteri</td>
-    </tr>
-    <tr>
-        <td>Tim</td>
-        <td>7</td>
-        <td>Julemarsipan gris</td>
-    </tr>
-    <tr>
-        <td>Kjetil</td>
-        <td>8</td>
-        <td>Skum tomtar</td>
-    </tr>
-    <tr>
-        <td>Lina</td>
-        <td>9</td>
-        <td>Godteri og munnbind</td>
-    </tr>
-    <tr>
-        <td>Pavels</td>
-        <td>10</td>
-        <td>Julesjokolade</td>
-    </tr>
-    <tr>
-        <td>Torbjørn</td>
-        <td>11</td>
-        <td>Julebånd</td>
-    </tr>
-    <tr>
-        <td>Iselin</td>
-        <td>14</td>
-        <td>Sjokoladesnøball</td>
-    </tr>
-    <tr>
-        <td>Jan Egil</td>
-        <td>15</td>
-        <td>Øl og chips</td>
-    </tr>
-    <tr>
-        <td>Morten</td>
-        <td>16</td>
-        <td>Twist</td>
-    </tr>
-    <tr>
-        <td>Einar</td>
-        <td>17</td>
-        <td>Salt</td>
-    </tr>
-    <tr>
-        <td>Nicolai</td>
-        <td>18</td>
-        <td>Sjokolade</td>
-    </tr>
-    <tr>
-        <td>Tommy</td>
-        <td>18</td>
-        <td>Sjokolade</td>
-    </tr>
+    !-->
 </table>
 
 <button id="spin" class="button">Spin</button>
@@ -123,11 +55,13 @@
 
 <script type="text/javascript">
     // Should match the number of participants
-    const colors = ["#cccccc", "#eaeaea"];
+    const colors = ["#cccccc", "#eaeaea", "#cccccc", "#eaeaea", "#cccccc", "#eaeaea", "#cccccc", "#eaeaea", "#cccccc",
+        "#eaeaea","#cccccc","#eaeaea", "#cccccc", "#eaeaea", "#cccccc","#eaeaea", "#cccccc"];
 
     // NEED to pre load this data prior
     // Should match the numper of colors
-    const participants = durstenfeldShuffle(["God jul", "Godt nyttår"]);
+    const participants = durstenfeldShuffle(["User1", "User2", "User3", "User4", "User5", "User6", "User7", "User8",
+        "User9", "User10", "User11", "User12", "User13", "User14", "User15", "User16", "User17"]);
 
     let startAngle = 0;
     const arc = Math.PI / (participants.length / 2);
